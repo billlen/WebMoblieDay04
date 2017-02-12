@@ -41,6 +41,7 @@ input,textarea{
     clear: both;
 }
 
+/*满足class以icon开头*/
 [class^="icon_"]{
     background: url("../images/sprites.png")no-repeat;
     /*高清压缩*/
