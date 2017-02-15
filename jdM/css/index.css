@@ -82,11 +82,13 @@ body{
     position: relative;
 }
 .jd_banner ul:first-child{
-    width: 800%;
+    width: 1000%;
+    transform: translateX(-10%);
+    -webkit-transform: translateX(-10%);
 }
 
 .jd_banner ul:first-child li{
-    width: 12.5%;
+    width: 10%;
     float: left;
 }
 .jd_banner ul:first-child li img{
