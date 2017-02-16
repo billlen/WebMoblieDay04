@@ -302,7 +302,8 @@
     background: #fff;
     border: 1px solid #e0e0e0;
     border-radius: 4px;
-    opacity: 0;
+    margin-top: 100px;
+
 }
 .jd_win_box .jd_win_box_con{
     line-height: 74px;
@@ -340,6 +341,41 @@
     margin-left: 10%;
     float: left;
 }
+
+/*跳出动画*/
+@keyframes jumpOut{
+    0%{
+        opacity: 0;
+        transform: translateY(-2000px);
+        -webkit-transform: translateY(-2000px);
+    }
+    60%{
+        opacity: 1;
+        transform: translateY(30px);
+        -webkit-transform: translateY(30px);
+    }
+    75%{
+        opacity: 1;
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+    }
+    90%{
+        opacity: 1;
+        transform: translateY(5px);
+        -webkit-transform: translateY(5px);
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+    }
+}
+
+.jumpOut{
+    animation: jumpOut 1s ease;
+}
+
+
 
 @keyframes bounceInDown {
     0%, 100%, 60%, 75%, 90% {
